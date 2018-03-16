@@ -1,6 +1,5 @@
 /*
-font-family: 'Rubik', sans-serif;
-font-family: 'Libre Baskerville', serif;
+
 */
 /* ----------------------------------------------------- */
 /*     BASIC SETUP                                       */
@@ -158,6 +157,7 @@ a:active {
   list-style:none;
   margin-top:55px;
   font-family: 'Rubik', sans-serif;
+  background-color: #fff;
 }
 
 .main-nav li {
@@ -184,12 +184,13 @@ a:active {
 }
 
 #main-nav-logo-text {
-  font-size: 200%;
-  background-color: #e67e22;
-  margin-bottom: 10px;
-  display: block;
-  border: #555;
-  border-width: 3px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 150%;
+  font-weight: 400;
+  position: absolute;
+  left: 20px;
+  
+
 }
 
 /*       MOBILE NAV            */
@@ -226,4 +227,160 @@ a:active {
 
 .sticky .logo { display: none; }  
 .sticky .logo-black { display: block; }
+
+
+
+/* ----------------------------------------------------- */
+/*     PORTFOLIO                                         */
+/* ----------------------------------------------------- */
+
+.section-portfolio {
+  background-color:rgb(233, 233, 233);
+}
+
+.box img {
+  width: 100%;
+  height: auto;  
+  margin-bottom: 5px;
+}
+
+.portfolio-feature {
+  margin-bottom: 5px;
+}
+
+
+/* ----------------------------------------------------- */
+/*     FORM                                              */
+/* ----------------------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px; 
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
+
+
+/* ----------------------------------------------------- */
+/*     FOOTER                                            */
+/* ----------------------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link, 
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+  color: #1da1f2;
+}
+
+.ion-social-googleplus:hover {
+  color: #db4437;
+}
+
+.ion-social-instagram:hover {
+  color: #c32aa3;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ----------------------------------------------------- */
+/*     ANIMATIONS                                        */
+/* ----------------------------------------------------- */
+
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
+}
 
