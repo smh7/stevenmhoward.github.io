@@ -13,15 +13,6 @@ $(document).ready(function() {
     });
     
     
-    /* Scroll on buttons */
-    $('.js--scroll-to-plans').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
-    });
-    
-    $('.js--scroll-to-start').click(function () {
-       $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
-    });
-    
     
     /* Navigation scroll */
     $(function() {
@@ -53,11 +44,6 @@ $(document).ready(function() {
         offset: '50%'
     });
     
-    $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animated pulse');
-    }, {
-        offset: '50%'
-    });
     
     
     /* Mobile navigation */
